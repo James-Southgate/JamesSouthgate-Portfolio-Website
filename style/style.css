@@ -1,0 +1,686 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+h1{
+    padding:0;
+    margin:0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    background-color: none;
+    z-index: 1100;
+}
+
+/* ################ header ##################### */
+.header{
+    overflow: hidden;
+    background-color: none;
+    color: white;
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    z-index: 101;
+    backdrop-filter: blur(5px);
+}
+
+.header_background{
+    overflow: hidden;
+    background-color: #121414;
+    color: white;
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+
+
+.header_left a{
+    margin-left: 50px;
+    margin-top: 10px;
+    position: absolute;
+    top: 16px;
+}
+
+.header_right{
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+
+.header_right a{
+    float: right;
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 10px;
+    transition: transform .3s;
+}
+
+.header_right a:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* ################ header ##################### */
+
+/* ################ my name ##################### */
+.my_name_transparent_holder{
+    text-align: center;
+    padding-top: 350px;
+    padding-bottom: 1150px;
+    z-index: 102;
+    color: transparent;
+}
+
+.my_name{
+    text-align: center;
+    z-index: 102;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    width: 2000px;
+    text-shadow: 0px 0px 200px rgba(206,206,206,0.3);
+    font-weight: 300;
+}
+
+
+
+/* ################ my name ##################### */
+
+/* ################ scroll anim ##################### */
+
+.container_for_scroll_animation{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll_animation{
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    animation: down 2.5s infinite;
+    -webkit-animation: down 2.5s infinite;
+}
+.scroll_animation::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    width: 6px;
+    height: 6px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+}
+
+@keyframes down {
+    0% {
+    transform: translate(0);
+    }
+    20% {
+    transform: translateY(15px);
+    }
+    40% {
+    transform: translate(0);
+    }
+}
+/* ################ scroll anim ##################### */
+
+/* ################ vid ##################### */
+
+
+.code_video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    opacity: 0.7;
+}
+
+.code_video_wall{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0;
+    background-color: #121414;
+}
+
+.code_video_wall2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 1;
+    background-color: #121414;
+}
+
+/* ################ vid ##################### */
+
+/* ################ text after vid ##################### */
+
+.text_after_vid{
+    padding-bottom: 1000px;
+    text-align: left;
+    position: relative;
+    line-height: 35px;
+}
+
+.container_for_text_after_vid{
+    position: absolute;
+    left: 100px;
+    width: 490px;
+    font-size: 35px;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.container2_for_text_after_vid{
+    position: absolute;
+    left: 100px;
+    width: 490px;
+    font-size: 35px;
+    font-weight: 500;
+    opacity: 0.2;
+}
+
+#About_invis{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: none;
+    top: -350px;
+
+}
+
+.about_me_words{
+    font-size: 40px;
+}
+
+/* ################ text after vid ##################### */
+
+/* ################ text2 after vid ##################### */
+.text2_after_vid{
+    background-color: none;
+    margin-bottom: 50px;
+    position: relative;
+    background-color: none;
+}
+
+.container_for_text2_after_vid{
+    padding-left: 90px;
+    font-weight: 2000px;
+    width: 1265px;
+    background-color: none;
+}
+
+.test_waffling{
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 15px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.test_largers_header{
+    font-size: 120px;
+    padding: 0;
+    margin: 0;
+    line-height: 130px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.test_small_waffling{
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+/* ################ text2 after vid #############  ######## */
+
+/* ################ section 3 after vid - my projects #############  ######## */
+#work_invis{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: none;
+    top: -250px;
+
+}
+
+.my_projects_section_container{
+    height: 850px;
+    width: 100%;
+    background-color: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.long_rect_for_design{
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    width: 30px;
+    height: 90%;
+    background: linear-gradient(180deg, rgba(168,237,245,1) 14%, rgba(177,232,255,1) 28%, rgba(1,235,211,1) 42%, rgba(6,172,234,1) 56%, rgba(17,125,255,1) 70%, rgba(124,34,255,1) 84%);
+    border-radius: 15px;
+}
+
+.my_projects_container{
+    height: 750px;
+    width: 1150px;
+    background-color: none;
+    position: absolute;
+    top: 30px;
+    left: 180px;
+}
+
+/* ################ project 1 ##################### */
+
+.project1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 33.3333%;
+    width: 100%;
+    background-color: none;
+}
+
+.container_for_project1_content{
+    position: absolute;
+    height: 100%;
+    width: 66%;
+    background-color: none;
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(110,110,115);
+}
+
+.header_for_project1{
+    color: white;
+    font-size: 35px;
+    background-color: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 5px;
+}
+
+.para_for_project1{
+    margin-top: 5px;
+}
+
+.container_for_photo_for_project1{
+    background-color: none;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 0px;
+}
+
+.photo_for_project1{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 230px;
+    height: 230px;
+}
+
+/* ################ project 1 ##################### */
+
+/* ################ project 2 ##################### */
+
+.project2{
+    position: absolute;
+    top: 33.3333%;
+    left: 0;
+    height: 33.3333%;
+    width: 100%;
+    background-color: #121414;
+    border-top: 1px solid #6B6B6B;
+}
+
+.container_for_project2_content{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 68%;
+    background-color: none;
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(110,110,115);
+    text-align: right;
+}
+
+.header_for_project2{
+    color: white;
+    font-size: 35px;
+    background-color: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.para_for_project2{
+    margin-top: 5px;
+}
+
+.container_for_photo_for_project2{
+    background-color: none;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 0px;
+}
+
+.photo_for_project2{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 230px;
+    height: 180px;
+}
+/* ################ project 2 ##################### */
+
+/* ################ project 3 ##################### */
+.project3{
+    position: absolute;
+    top: 66.66666%;
+    left: 0;
+    height: 33.3333%;
+    width: 100%;
+    background-color: #121414;
+    border-top: 1px solid #6B6B6B;
+}
+
+.container_for_project3_content{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 67%;
+    background-color: none;
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(110,110,115);
+}
+
+.header_for_project3{
+    color: white;
+    font-size: 35px;
+    background-color: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.para_for_project3{
+    margin-top: 5px;
+}
+
+.container_for_photo_for_project3{
+    background-color: none;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 0px;
+}
+
+.photo_for_project3{
+    position: absolute;
+    top: 53%;
+    left: 40%;
+    transform: rotate(180deg) translate(50%, 50%);
+    width: 230px;
+    height: 230px;
+}
+/* ################ project 3 ##################### */
+
+/* ################ section 3 after vid - my projects ##################### */
+
+/* ################ imgs ##################### */
+.outer_container_for_img1 {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    border: 1px solid black
+    transform: translateX(50%);
+    background: none;
+}
+
+#img1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#img2 {
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    display: none;
+}
+
+#img3 {
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    display: none;
+}
+
+.para1_for_img1{
+    position: absolute;
+    top: 550px;
+    left: 150px;
+    background-color: none;
+    color: rgb(110,110,115);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.para2_for_img1{
+    position: absolute;
+    top: 1000px;
+    right: 150px;
+    background-color: none;
+    color: rgb(110,110,115);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+}
+
+.para3_for_img1{
+    position: absolute;
+    top: 1450px;
+    left: 150px;
+    background-color: none;
+    color: rgb(110,110,115);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.white_words{
+    color: white;
+}
+/* ################ imgs ##################### */
+
+/* ################ do what u love ##################### */
+.container_for_what_you_love{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-bottom: 250px;
+    margin-top: 10px;
+}
+
+.do_what_you_love{
+    font-size: 120px;
+    padding: 0;
+    margin: 0;
+    line-height: 130px;
+    padding-bottom: 40px;
+    background-color: red;
+    background-image: linear-gradient(150deg, rgba(169,139,254,1) 11%, rgba(198,179,255,1) 28%, rgba(1,181,235,1) 42%, rgba(6,172,234,1) 56%, rgba(17,125,255,1) 65%, rgba(124,34,255,1) 75%);    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.love_what_you_do{
+    font-size: 120px;
+    padding: 0;
+    margin: 0;
+    line-height: 130px;
+    padding-bottom: 40px;
+    text-align: right;
+    background-color: red;
+    background-image: linear-gradient(150deg, rgba(169,139,254,1) 11%, rgba(198,179,255,1) 28%, rgba(1,181,235,1) 42%, rgba(6,172,234,1) 56%, rgba(17,125,255,1) 65%, rgba(124,34,255,1) 75%);    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.author_of_quote{
+    text-align: right;
+    padding-right: 5%;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+/* ################ do what u love ##################### */
+
+
+
+
+
+/* ################ last para ##################### */
+.last_para{
+    background-color: none;
+    margin-top: -100px;
+    margin-bottom: 60px;
+}
+
+.long_rect{
+    position: relative;
+    width: 101%;
+    height: 100px;
+    top: 125px;
+    left: -0.5%;
+    background: linear-gradient(90deg, rgba(198,178,255,1) 0%, rgba(34,185,255,1) 16%, rgba(143,0,255,1) 40%, rgba(164,0,255,1) 65%, rgba(255,0,0,1) 100%);
+	transform: rotate(13deg) skew(13deg);
+    opacity: 1;
+    overflow:hidden;
+}
+
+.last_para_container{
+    background-color: none;
+    position: relative;
+    width: 87%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 40px;
+    font-weight: 500;
+    top: -80px;
+    text-align: justify;
+}
+/* ################ last para ##################### */
+
+
+/* ################ contact me ##################### */
+
+.contact_me{
+    width: 100%;
+    height: 372px;
+}
+
+.container_for_contact_me{
+    margin-top: 15vh;
+    margin-left: 90px;
+    font-size: 70px;
+    line-height: 130px;
+}
+
+.my_email_container{
+    margin-top: 50px;
+    margin-left: 90px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/* ################ contact me ##################### */
+
+/* ################ bottom ##################### */
+.bottom{
+    background-color: none;
+}
+
+.container_for_bottom{
+    margin-left: 90px;
+    margin-right: 90px;
+    background-color: none;
+    position: relative;
+    border-top: 1px solid #333;
+}
+
+.bottom_left{
+    position: absolute;
+    left: 0;
+    background-color: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.bottom_right{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background-color: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* ################ bottom ##################### */
