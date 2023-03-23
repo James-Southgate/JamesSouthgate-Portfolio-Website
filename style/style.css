@@ -686,7 +686,7 @@ video{
 }
 
 #container_for_moving_img{
-    width: 100vw;
+    width: 100%;
     height: 3000px;
     position: absolute;
     top: -100px;
