@@ -35,7 +35,7 @@
 </div>
 
 <div class="code_video" id="code_video">
-    <video id="code_video_actual_vid" height="1000vh" autoplay muted loop>
+    <video id="code_video_actual_vid" height="100%" width="100%"autoplay muted loop>
         <source src="ink2-shorter.mp4" type="video/mp4">
     </video>
 </div>
@@ -46,27 +46,30 @@
 <div class="code_video_wall2" id="code_video_wall2">
 </div>
 
+<div id="screen_height_test"></div>
 
 <div class="text_after_vid">
-    <div class="container_for_text_after_vid" id="id_for_container_for_text_after_vid">
-        <div id="About_invis"></div>
-        <span class="about_me_words" id="part1_of_text_after_vid">About Me<br/></span>
-        <span id="part2_of_text_after_vid">I have studied software engineering and computer science since I was a child.</span>
-        <span id="part3_of_text_after_vid">I am passionate about design, creation, development and perfection.</span>
-        <span id="part4_of_text_after_vid">I have a positive, respectful and motivated attitude.</span>
-        <span id="part5_of_text_after_vid">As well as being self-driven with the ability to deal with ambiguity or uncertainty.</span>
-        <span id="part6_of_text_after_vid">I am currently an undergraduate at Bournemouth University, where I study software engineer</span>
-        <span id="part7_of_text_after_vid">My core skills are python, Java and web development and design.</span>
-    </div>
+    <div class="container_container_for_text_after_vid">
+        <div class="container_for_text_after_vid" id="id_for_container_for_text_after_vid">
+            <div id="About_invis"></div>
+            <span class="about_me_words" id="part1_of_text_after_vid">About Me<br/></span>
+            <span id="part2_of_text_after_vid">I have studied software engineering and computer science since I was a child.</span>
+            <span id="part3_of_text_after_vid">I am passionate about design, creation, development and perfection.</span>
+            <span id="part4_of_text_after_vid">I have a positive, respectful and motivated attitude,</span>
+            <span id="part5_of_text_after_vid">as well as being self-driven with the ability to deal with ambiguity or uncertainty.</span>
+            <span id="part6_of_text_after_vid">I am currently an undergraduate at Bournemouth University, where I study software engineering.</span>
+            <span id="part7_of_text_after_vid">My core skills are python, Java and web development and design.</span>
+        </div>
 
-    <div class="container2_for_text_after_vid">
-        <span class="about_me_words">About Me<br/></span>
-        <span>I have studied software engineering and computer science since I was a child.</span>
-        <span>I am passionate about design, creation, development and perfection.</span>
-        <span>I have a positive, respectful and motivated attitude.</span>
-        <span>As well as being self-driven with the ability to deal with ambiguity or uncertainty.</span>
-        <span>I am currently an undergraduate at Bournemouth University, where I study software engineer</span>
-        <span>My core skills are python, Java and web development and design.</span>
+        <div class="container2_for_text_after_vid">
+            <span class="about_me_words">About Me<br/></span>
+            <span>I have studied software engineering and computer science since I was a child.</span>
+            <span>I am passionate about design, creation, development and perfection.</span>
+            <span>I have a positive, respectful and motivated attitude,</span>
+            <span>as well as being self-driven with the ability to deal with ambiguity or uncertainty.</span>
+            <span>I am currently an undergraduate at Bournemouth University, where I study software engineering.</span>
+            <span>My core skills are python, Java and web development and design.</span>
+        </div>
     </div>
 </div>
 
@@ -76,7 +79,9 @@
         <div id="work_invis"></div>
         <h1 class="test_waffling" id="work_link">My Experience<br/></h1>
         <h1 class="test_largers_header">Work,<br/>My Projects,<br/>What I've Done</h1>
-        <h1 class="test_small_waffling">Throughout my career, I have been a part of many projects, both as a member in a large team to more personal projects. Each project has provided me with invaluable experience, and I take great pride in the accomplishments I have achieved thus far. I look forward with excitement to the opportunities that lie ahead, knowing that the lessons learned from my past projects will benefit me well.</h1>
+        <div class="container_for_test_small_waffling">
+            <h1 class="test_small_waffling">Throughout my career, I have been a part of many projects, both as a member in a large team to more personal ones. Each project has provided me with invaluable experience, and I take great pride in the accomplishments I have achieved thus far. I look forward with excitement to the opportunities that lie ahead, knowing that the lessons learned from my past projects will benefit me well.</h1>
+        </div>
     </div>
 </div>
 
@@ -87,52 +92,55 @@
         <div class="project1">
             <div class="container_for_project1_content">
                 <p class="header_for_project1">Asset Management System<br/></p>
-                <p class="para_for_project1">An asset management system that is used to log, tack and organise assets of all types. From apps and games, software and other virtual assets to computers, servers, printers and any other physical asset, this system works with it all to track and organise so you don’t have to. In the report section you can report on anything from assets already stored in the table, to logging important documents so they are all in one tidy place.<br/><br/> This system was created using HTML, CSS and JS for the web design and python for the majority of the backend. The framework Flask was used alongside JSON for the database.</p>
+                <p class="para_for_project1">An Asset Management System that is used to log, tack and organise assets of all types. From</br>apps and games, software and other virtual assets to computers, servers, printers and any other</br>physical asset, this system works with it all to track and organise, so you don’t have to. In the</br>report section you can report on anything from assets already stored in the table, to logging</br>important documents, so they are all in one tidy place.<br/><br/> This system was created using HTML, CSS and JS for the web design and python for the majority</br>of the backend. The framework Flask was used alongside JSON for the database.</p>
             </div>
             <div class="container_for_photo_for_project1">
-                <img class="photo_for_project1" src="photos/asset management.png">
+                <img class="photo_for_project1" id="photo_for_project1" src="photos/asset management.png">
             </div>
         </div>
         <div class="project2">
             <div class="container_for_project2_content">
                 <p class="header_for_project2">Guitar Tuner App<br/></p>
-                <p class="para_for_project2">This was one of my most enjoyable projects I’ve worked on. This guitar tuner was coded using entirely Python by utilising the TKInter module for the UI and front end design. The guitar tuner works by taking sound as an input and adding the average pitch to an array over a few micro seconds. The data is the passed through a Fourier Transformation in order to calculate the frequency which can then be determined as too low or too high.<br/><br/>This project taught me a lot about data as extensive data analytics and manipulation was required, as well as getting to use and learning more about modules such as Matplotlib and Numpy.</p>
+                <p class="para_for_project2">This was one of my most enjoyable projects I’ve worked on. This guitar tuner was coded using entirely</br>Python by utilising the TKInter module for the UI and front end design. The guitar tuner works by taking</br>sound as an input and adding the average pitch to an array over a few micro seconds. The data is then</br>passed through a Fourier Transformation in order to calculate the frequency which can then be</br>determined as too low or too high.<br/><br/>This project taught me a lot about data as extensive data analytics and manipulation was required, as well</br>as getting to use and learning more about modules such as Matplotlib and Numpy.</p>
             </div>
             <div class="container_for_photo_for_project2">
-                <img class="photo_for_project2" src="photos/sound wave.png">
+                <img class="photo_for_project2" id="photo_for_project2" src="photos/sound wave.png">
             </div>
         </div>
         <div class="project3">
             <div class="container_for_project3_content">
                 <p class="header_for_project3">Android Studio Battle Ships<br/></p>
-                <p class="para_for_project2">A modern replica of the old classic battleships. with single and multiplayer modes, you can enjoy a game with a friend, or just play by yourself. This project was made in Android Studio using Kotlin alongside Gradle build automation.<br/><br/>This project was amazing for learning more about Kotlin as well as how Android Stdio works. I particularly enjoyed the UI development as designing Battleships provides the ability to use a retro design to reminisce on the original, or go with a more modern day spin on the classic.</p>
+                <p class="para_for_project2">A modern replica of the old classic battleships. with single and multiplayer modes, you can enjoy a game</br>with a friend, or just play by yourself. This project was made in Android Studio using Kotlin alongside</br>Gradle build automation.<br/><br/>This project was amazing for learning more about Kotlin as well as how Android Stdio works. I particularly</br>enjoyed the UI development as designing Battleships provides the ability to use a retro design to</br>reminisce on the original, or go with a more modern day spin on the classic.</p>
             </div>
             <div class="container_for_photo_for_project3">
-                <img class="photo_for_project3" src="photos/battleship-removebg-preview.png">
+                <img class="photo_for_project3" id="photo_for_project3" src="photos/battleship-removebg-preview.png">
             </div>
         </div>
-
     </div>
 </div>
 
 
-<div class="outer_container_for_img1" id="outer_container_for_img1">
-    <img id="img1" src="photos/web-development.png" alt="">
-    <img id="img2" src="photos/code.png" alt="">
-    <img id="img3" src="photos/app-design.png" alt="">
-   <div>
-        <div class="para1_for_img1" id="para1_for_img1">
-            <span><span class="white_words">Design&nbsp</span>I enjoy designing beautiful<br/>and satisfying Users Interfaces both<br/>static and responsive. I have years<br/>of experience in UI design ranging<br/>from static form pages to interactive,<br/>responsive UIs using techniques like<br/>CSS animation and JS to using UI<br/>models in Python.</span>
-        </div>
-    </div>
-    <div>
-        <div class="para2_for_img1" id="para2_for_img1">
-            <span><span class="white_words">Development&nbsp</span>I have a formidable<br/>passion for creation, One of the many<br/>reasons why I enjoy programming<br/>so much. The feeling satisfaction and<br/>accomplishment from completing a<br/>hard project in unrivalled. I have<br/>multiple years of education and<br/>experience to justify.</span>
-        </div>
-    </div>
-    <div>
-        <div class="para3_for_img1" id="para3_for_img1">
-            <span><span class="white_words">Perfection&nbsp</span>In contrast there is<br/>nothing more unsatisfying and un-<br/>accomplished than an unfinished<br/>project, or worse, a project that<br/>has the potential to be so much<br/>better. That’s where I come in,<br/>to raise the bar to the next level,<br/>even in areas that can neglected<br/>and forgotten about.</span>
+<img id="img1" src="photos/web-development.png" alt="">
+<img id="img2" src="photos/code.png" alt="">
+<img id="img3" src="photos/app-design.png" alt="">
+
+<div class="outer_outer_container_for_img1" id="outer_outer_container_for_img1" >
+    <div class="outer_container_for_img1" id="outer_container_for_img1">
+        <div id="container_for_moving_img">
+            <img id="img1_moving" src="photos/web-development.png" alt="">
+            <div class="para1_for_img1" id="para1_for_img1">
+                <span><span class="white_words">Design&nbsp</span>I enjoy designing beautiful<br/>and satisfying Users Interfaces both<br/>static and responsive. I have years<br/>of experience in UI design, ranging<br/>from static to dynamic and interactive<br/>to responsive UIs using lots of different<br/>techniques to ensure that a pleasant<br/>user expirence is paramount.</span>
+            </div>
+            <img id="img2_moving" src="photos/code.png" alt="">
+            <img id="img2_moving2" src="photos/code.png" alt="">
+            <div class="para2_for_img1" id="para2_for_img1">
+                <span><span class="white_words">Development&nbsp</span>I have a formidable<br/>passion for creation, one of the many<br/>reasons why I enjoy programming<br/>so much. The feeling satisfaction and<br/>accomplishment from completing a<br/>hard project in unrivalled. I have<br/>multiple years of education and<br/>experience to justify.</span>
+            </div>
+            <img id="img3_moving" src="photos/app-design.png" alt="">
+            <img id="img3_moving2" src="photos/app-design.png" alt="">
+            <div class="para3_for_img1" id="para3_for_img1">
+                <span><span class="white_words">Perfection&nbsp</span>In contrast, there is<br/>nothing more unsatisfying and un-<br/>accomplished than an unfinished<br/>project, or worse, a project that<br/>has the potential to be so much<br/>better. That’s where I come in,<br/>to raise the bar to the next level,<br/>even in areas that can be neglected<br/>and forgotten about.</span>
+            </div>
         </div>
     </div>
 </div>
